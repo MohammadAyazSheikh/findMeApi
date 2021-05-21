@@ -119,4 +119,4 @@ def getScheduleAll():
 # app.run(host= '0.0.0.0') 
 # app.run(host= '192.168.0.2')
 if __name__ == "__main__":
-    app.run()#(debug=False,host='0.0.0.0')
+    app.run(host='0.0.0.0')#(debug=False,host='0.0.0.0')
