@@ -56,20 +56,20 @@ def getSchedule():
         return "Error: No hour field provided. Please specify an hour."
 
     data  = {}
-    # try:
-    filename = 'user '+str(uId) + ' file.xlsx'
-    results = aiModel.getRecommendations(Hour=hr, Num=num, FileName=filename)
-    
-    data = {
-        'result':results,
-        'succes':True
-    }
+    try:
+        filename = 'user '+str(uId) + ' file.xlsx'
+        results = aiModel.getRecommendations(Hour=hr, Num=num, FileName=filename)
+        
+        data = {
+            'result':results,
+            'succes':True
+        }
 
-    # except:
-    #     print("An exception occurred")
-    #     data = {
-    #         'succes':False
-    #     }
+    except:
+        print("An exception occurred")
+        data = {
+            'succes':False
+        }
 
     
     return jsonify(data)
