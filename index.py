@@ -11,7 +11,7 @@ app = flask.Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
-    return '''<h1>FindME AI API</h1>
+    return '''<h1>FindME AI API test 1</h1>
 <p>Created By Ayaz and Uzair.</p>'''
 
 # --------------------------------------------------------------------------------------------
