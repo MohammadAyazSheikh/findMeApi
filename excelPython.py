@@ -63,7 +63,7 @@ def addValues(uID, city, hour):
         # insertValues(uID,city,hour,path)
         # insVal(path, int(hour), city)
 
-# addValues('test','kaarchi',4)
+
 
 # -------------------------------------------
 
@@ -75,7 +75,7 @@ def insVal(path, hr_, place):
 
     cityList = []
     hrList = []
-    for x in range(1, 25):
+    for x in range(2, 26):
 
         hr = ws['A'+str(x)].value
         city = ws['B'+str(x)].value
@@ -111,7 +111,7 @@ def addInitialData(uID, data):
     ws['A1'] = 'hour'
     ws['B1'] = 'city'
 
-    i = 1
+    i = 2
 
     for x in range(0, 24):
 
